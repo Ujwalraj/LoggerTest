@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="E-Comm_Template_Hybrid" parallel="classes"
+	thread-count="3">
+	<parameter name="URL"
+		value="https://jqueryui.com/resources/demos/slider/default.html"></parameter>
+	<parameter name="Browser" value="chrome"></parameter>
+	<parameter name="Company" value="Werner Electric Supply"></parameter>
+	<parameter name="OS" value="Windows"></parameter>
+	<parameter name="RemoteUrl"
+		value="http://localhost:4444/wd/hub"></parameter>
+	<test name="Regression">
+		<classes>
+			<class name="testcases.TestSliders2"/>
+			<class name="testcases.TestSliders3"/>
+				<!-- <methods>
+					<include name="verifyProductFunctioGroupsTab" />
+				</methods> -->
+			
+		</classes>
+	</test>
+</suite> 

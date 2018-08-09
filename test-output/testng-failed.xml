@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="3" guice-stage="DEVELOPMENT" name="Failed suite [E-Comm_Template_Hybrid]" parallel="classes">
+  <parameter name="Company" value="Werner Electric Supply"/>
+  <parameter name="OS" value="Windows"/>
+  <parameter name="RemoteUrl" value="http://localhost:4444/wd/hub"/>
+  <parameter name="URL" value="https://jqueryui.com/resources/demos/slider/default.html"/>
+  <parameter name="Browser" value="chrome"/>
+  <test thread-count="3" name="Regression(failed)" parallel="classes">
+    <classes>
+      <class name="testcases.TestSliders2">
+        <methods>
+          <include name="testLogs"/>
+        </methods>
+      </class> <!-- testcases.TestSliders2 -->
+      <class name="testcases.TestSliders3">
+        <methods>
+          <include name="testLogs"/>
+        </methods>
+      </class> <!-- testcases.TestSliders3 -->
+    </classes>
+  </test> <!-- Regression(failed) -->
+</suite> <!-- Failed suite [E-Comm_Template_Hybrid] -->
